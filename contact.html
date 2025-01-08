@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Abou Aziza</h1>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">À Propos</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                    <li><a href="Galeries.html">Galeries</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez Nous</h2>
+            <p>Vous avez des questions ou besoin d'aide ? Contactez-nous !</p>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="access_key" value="1d655107-922a-4d7c-ac00-2ee2388cf573">
+                <label for="name">Entrez Votre Nome :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Entrez Votre Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Envoiyer</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-locations">
+                <div class="location">
+                    <h3>N'djamena</h3>
+                    <p>Terminal de Bus Agence De Voyage <br><strong>Abou Aziza</strong></p>
+                    <p>Plot 30-32, Karkandjie 16ᵉ arrondissement, N'djamena, Tchad</p>
+                </div>
+                <div class="location">
+                    <h3>Abéché</h3>
+                    <p>Amririé, Abéché, Tchad</p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agence De Voyage Abou Aziza. Tous droits réservés.</p>
+        </div>
+    </footer>
+	<script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence Abou Aziza - Accueil</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+    <div class="navbar" os-animation="fadeInUp">
+        <h1 os-animation="fadeInUp">Agence Abou Aziza</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Accueil</a>
+            <a href="apropos.html">À Propos</a>
+            <a href="partenaires.html">Partenaires</a>
+			<a href="Galeries.html">Galeries</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- Home Section -->
+    <section id="home" class="home" os-animation="fadeInUp">
+        <h1 os-animation="fadeInUp">Bienvenue chez Agence De Voyage Abou Aziza</h1>
+        <p os-animation="fadeInUp">Voyagez en toute sécurité et confort avec nos bus modernes.</p>
+        <div class="bt" os-animation="fadeInUp">
+			<div class="promotion" id="promotionText">N'DJAMENA</div>
+            <a href="#" class="buttons">Réserver maintenant</a>
+        </div>
+    </section><hr class="ligne">
+
+  <!-- Destinations Populaires -->
+<section class="destinations">
+  <h2 os-animation="fadeInUp">Destinations Populaires</h2>
+  <div class="destination-grid">
+    <div class="destination-card" os-animation="fadeInUp">
+      <div class="image-wrapper" os-animation="fadeInUp">
+        <img src="images/image6.jpg" alt="N'Djamena">
+        <div class="image-overlay"></div>
+      </div>
+      <h3 os-animation="fadeInUp">N'Djamena</h3>
+      <p os-animation="fadeInUp">Découvrez la capitale du Tchad, riche en histoire et en culture. Explorez les marchés animés et les sites historiques. N'Djaména a un climat aride, proche de celui de Khartoum.</p>
+      <a href="https://fr.wikipedia.org/wiki/N%27Djam%C3%A9na" class="btn">En savoir plus</a>
+    </div>
+    <div class="destination-card" os-animation="fadeInUp">
+      <div class="image-wrapper" os-animation="fadeInUp">
+        <img src="images/photo_2025-01-04%2021.51.17.jpeg" alt="Moundou">
+        <div class="image-overlay"></div>
+      </div>
+      <h3 os-animation="fadeInUp">Mongo</h3>
+      <p os-animation="fadeInUp">Mongo est la dixième grande ville du Tchad, situé à 450 km de la capitale N'Djaména. Elle se trouve dans la région du Guéra, abritant certains des plus hauts sommets du pays.</p>
+      <a href="https://fr.wikipedia.org/wiki/Mongo_(Tchad)" class="btn">En savoir plus</a>
+    </div>
+    <div class="destination-card" os-animation="fadeInUp">
+      <div class="image-wrapper" os-animation="fadeInUp">
+        <img src="images/Abeche.jpeg" alt="Abéché"><br>
+        <div class="image-overlay"></div>
+      </div>
+      <h3 os-animation="fadeInUp">Abéché</h3>
+      <p os-animation="fadeInUp">Explorez cette ville historique, ancienne capitale du sultanat du Ouaddaï, riche en patrimoine culturel. Abéché est situé dans le massif de l'Ouaddaï et sa population est de 78 531 habitants en 2008.</p>
+      <a href="https://fr.wikipedia.org/wiki/Ab%C3%A9ch%C3%A9" class="btn">En savoir plus</a>
+    </div>
+  </div>
+</section>
+
+<section class="horaires" os-animation="fadeInUp">
+  <h2 os-animation="fadeInUp">Horaires & Tarifs</h2>
+  <table>
+    <thead os-animation="fadeInUp">
+      <tr>
+        <th >Destination</th>
+        <th>Départ</th>
+        <th>Arrivée</th>
+        <th class="the"> Prix </th>
+      </tr>
+    </thead>
+    <tbody os-animation="fadeInUp">
+      <tr os-animation="fadeInUp">
+        <td>N'Djamena - Abéché</td>
+        <td>03:00</td>
+        <td>17:00</td>
+        <td>25 000 FCFA</td>
+      </tr>
+      <tr os-animation="fadeInUp">
+        <td>N'Djamena - Mongo</td>
+        <td>04:00</td>
+        <td>20:00</td>
+        <td>20 000 FCFA</td>
+      </tr>
+      <tr os-animation="fadeInUp">
+        <td>N'Djamena - Bitkine</td>
+        <td>12:00</td>
+        <td>16:00</td>
+        <td>20 000 FCFA</td>
+      </tr>
+      <tr os-animation="fadeInUp">
+        <td>N'Djamena - Bokoro</td>
+        <td>03:00</td>
+        <td>07:00</td>
+        <td>15 000 FCFA</td>
+      </tr>
+		<tr os-animation="fadeInUp">
+        <td>N'Djamena - Massaguet</td>
+        <td>03:00</td>
+        <td>17:00</td>
+        <td>10 000 FCFA</td>
+      </tr>
+		<tr os-animation="fadeInUp">
+        <td>Abéché - N'Djamena</td>
+        <td>03:00</td>
+        <td>17:00</td>
+        <td>25 000 FCFA</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <!-- Réservation en Ligne -->
+  <section class="reservation">
+    <h2 os-animation="fadeInUp">Réservez votre billet</h2>
+    <form id="reservation-form" action="https://api.web3forms.com/submit" method="POST">
+		<input type="hidden" name="access_key" value="1d655107-922a-4d7c-ac00-2ee2388cf573">
+		<label for="destination" os-animation="fadeInUp">Nome & Prenom :</label>
+		<div class="same" os-animation="fadeInUp">
+			<div class="some">
+		<input type="text" name="Nome" placeholder="Entrez votre Nome" required>
+			</div>
+		<input type="text" name="Prenom" placeholder="Entrez votre Prenom" required>
+		</div>
+		<label for="destination" os-animation="fadeInUp">Départ :</label>
+      <select id="destination" name="Départ" required os-animation="fadeInUp">
+        <option value="N'DJAMENA">N'DJAMENA</option>
+        <option value="MASSAGUET">MASSAGUET</option>
+        <option value="NGOURA">NGOURA</option>
+		<option value="BOKORO">BOKORO</option>
+		<option value="BITKINE">BITKINE</option>
+		<option value="MONGO">MONGO</option>
+		<option value="OUM-HADJER">OUM-HADJER</option>
+		<option value="ABÉCHÉ">ABÉCHÉ</option>
+      </select>
+      <label for="destination" os-animation="fadeInUp">Destination :</label>
+      <select id="destination" name="Destination" required os-animation="fadeInUp">
+        <option value="N'DJAMENA">N'DJAMENA</option>
+        <option value="MASSAGUET">MASSAGUET</option>
+        <option value="NGOURA">NGOURA</option>
+		<option value="BOKORO">BOKORO</option>
+		<option value="BITKINE">BITKINE</option>
+		<option value="MONGO">MONGO</option>
+		<option value="OUM-HADJER">OUM-HADJER</option>
+		<option value="ABÉCHÉ">ABÉCHÉ</option>
+      </select>
+	  <label for="destination" os-animation="fadeInUp">Numbre de place  :</label>
+      <select id="destination" name="Chaise" required os-animation="fadeInUp">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+      <label for="date" os-animation="fadeInUp">Date :</label>
+      <input type="date" id="date" name="date" required os-animation="fadeInUp">
+      <label for="heure" os-animation="fadeInUp">Heure :</label>
+      <input type="time" id="heure" name="heure" required os-animation="fadeInUp">
+      <button type="submit">Réserver</button>
+    </form>
+  </section>
+
+  <!-- Offres Spéciales -->
+<section class="offres">
+  <h2 >Offres Spéciales</h2>
+  <div class="offre-grid">
+    <div class="offre-card" os-animation="fadeInUp">
+      <img src="images/photo_2025-01-04%2021.37.48.jpeg" alt="Offre 1" os-animation="fadeInUp">
+      <h3 os-animation="fadeInUp">Escapade d'un week-end</h3>
+      <p os-animation="fadeInUp">Économisez 20% sur les billets pour Abéché ce weekend ! Profitez d'un voyage confortable à petit prix.</p>
+      <a href="#" class="btn">En savoir plus</a>
+    </div>
+    <div class="offre-card" os-animation="fadeInUp">
+      <img src="images/AAA.png" alt="Offre 2" os-animation="fadeInUp">
+      <h3 os-animation="fadeInUp">Rabais interurbain</h3>
+      <p os-animation="fadeInUp">Profitez de réductions sur les trajets longue distance vers Abéché et Mongo. Idéal pour les voyages en famille.</p>
+      <a href="#" class="btn">En savoir plus</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Témoignages -->
+  <section class="temoignages" os-animation="fadeInUp">
+    <h2 os-animation="fadeInUp">Témoignages</h2>
+    <div class="temoignage-grid">
+      <div class="temoignage-card" os-animation="fadeInUp">
+        <img src="images/photo_2025-01-04%2021.38.00.jpeg" alt="Client 1">
+        <p os-animation="fadeInUp">"Service excellent et bus très confortables !"</p>
+        <span>- Client 1</span>
+      </div>
+      <div class="temoignage-card" os-animation="fadeInUp">
+        <img src="images/image3.png" alt="Client 2">
+        <p os-animation="fadeInUp">"Voyage agréable et prix abordables."</p>
+        <span>- Client 2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+	<section class="faq">
+  <div class="faq-item" os-animation="fadeInUp">
+    <i class="fas fa-shield-alt"></i>
+    <h3 os-animation="fadeInUp">Réserver un billet ?</h3>
+    <p os-animation="fadeInUp">Rendez-vous sur la page de réservation, sélectionnez votre destination, date et heure, puis suivez les étapes pour finaliser votre réservation.</p>
+  </div>
+  <div class="faq-item" os-animation="fadeInUp">
+    <i class="fas fa-handshake"></i>
+    <h3 os-animation="fadeInUp">Modes de paiement ?</h3>
+    <P os-animation="fadeInUp">Nous acceptons les cartes de crédit, les paiements en espèces et les transferts mobiles.</P>
+  </div>
+  <div class="faq-item" os-animation="fadeInUp">S
+    <i class="fas fa-smile"></i>
+    <h3 os-animation="fadeInUp">Offres spéciales?</h3>
+    <p os-animation="fadeInUp">Oui, nous proposons des réductions pour les groupes de plus de 10 personnes. Contactez-nous pour plus de détails.</p>
+  </div>
+  <div class="faq-item" os-animation="fadeInUp">
+    <i class="fas fa-couch"></i>
+    <h3 os-animation="fadeInUp">Contacter un client ?</h3>
+    <p os-animation="fadeInUp">Vous pouvez nous contacter par téléphone au +250793225853 ou par email à contact@abouaziza.com.</p>
+  </div>
+</section>
+
+  <!-- Carte Interactive -->
+<section class="carte">
+  <h2 os-animation="fadeInUp">Carte Interactive</h2>
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15600.123456789012!2d15.123456789012345!3d12.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzI0LjQiTiAxNcKwMDcnMjQuNCJF!5e0!3m2!1sfr!2std!4v1631234567890!5m2!1sfr!2std" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Locations Section -->
+            <div class="footer-locations">
+				<div class="location" os-animation="fadeInUp">
+                    <h3 os-animation="fadeInUp">N'djamena</h3>
+                    <p os-animation="fadeInUp">Terminal de Bus Agence De Voyage <br><strong>Abou Aziza</strong></p>
+                    <p os-animation="fadeInUp">Plot 30-32, Karkandjie, N'djamena ,Tchad</p>
+                    <p os-animation="fadeInUp"><strong>TEL :</strong> +250793225853 | +250793225853</p>
+                </div>
+                <div class="location" os-animation="fadeInUp">
+                    <h3 os-animation="fadeInUp">Abéché</h3>
+                    <p os-animation="fadeInUp">Terminal de Bus Agence De Voyage <br><strong>Abou Aziza</strong></p>
+                    <p os-animation="fadeInUp">Plot 30-32, Amririé, Abéché, Tchad</p>
+                    <p os-animation="fadeInUp"><strong>TEL :</strong> +250793225853 | +250793225853</p>
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3 os-animation="fadeInUp">Suivez-nous</h3>
+                <div class="social-icons" os-animation="fadeInUp">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom" os-animation="fadeInUp">
+            <p os-animation="fadeInUp">&copy; 2025 Agence De Voyage Abou Aziza. Tous droits réservés.</p>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>

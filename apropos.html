@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence Abou Aziza - Accueil</title>
+  <link rel="stylesheet" href="apropos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Agence Abou Aziza</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="#home">À Propos</a>
+            <a href="partenaires.html">Partenaires</a>
+            <a href="Galeries.html">Galeries</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <header id="home" os-animation="fadeInUp">
+        <h1>À propos des Services<br><span>ABOU AZIZA</span></h1>
+    </header>
+    <section class="about-section">
+        <h2>En savoir plus sur les Services de Bus de ABOU AZIZA</h2>
+        <div class="content">
+            <div class="text" os-animation="fadeInUp">
+                <p os-animation="fadeInUp">Depuis un début modeste en 2005 avec des express jusqu'à devenir la plus grande compagnie de transport public du Tchad aujourd'hui, Tchad Bus Services Limited s'engage à être la référence en matière de services de transport public dans tout la région du Tchad. Actuellement, nous disposons d'une flotte de bus urbains modernes totalisant plus de 100 ainsi plusieur autocars modernes.</p>
+                <p os-animation="fadeInUp">Nous desservons les principales villes du Tchad, notamment N'Djamena, Moundou, Sarh et Abéché, ainsi que des destinations internationales via des partenariats avec des transporteurs régionaux.</p>
+            </div>
+            <div class="image" os-animation="fadeInUp">
+                <img src="images/AAA.png" alt="Bus de Kigali">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature" os-animation="fadeInUp">
+            <h3 onclick="toggleContent(this)">Notre Vision <span>+</span></h3>
+            <div class="features-content">
+                <p>Fournir des services de transport public fiables et abordables pour la population du Rwanda.</p>
+            </div>
+        </div>
+        <div class="feature" os-animation="fadeInUp">
+            <h3 onclick="toggleContent(this)">Notre Mission <span>+</span></h3>
+            <div class="features-content">
+                <p>Devenir la première entreprise de transport public de la région en maintenant des normes élevées de prestation de services.</p>
+            </div>
+        </div>
+        <div class="feature" os-animation="fadeInUp">
+            <h3 onclick="toggleContent(this)">Nos valeurs<span>+</span></h3>
+            <div class="features-content">
+                <ul>
+                    <li>Dépasser les attentes des clients en proposant continuellement des services de transport de haute qualité</li>
+                    <li>Maintenir la transparence, l'honnêteté, la fiabilité et l'intégrité générale dans les relations avec toutes les parties prenantes</li>
+                    <li>Maintenir un environnement de travail inclusif qui accueille les nouvelles idées, le changement, le respect de l'individu et l'égalité des chances de réaliser son potentiel.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="feature" os-animation="fadeInUp">
+            <h3 onclick="toggleContent(this)">Nos Offres <span>+</span></h3>
+            <div class="features-content">
+                <p>Nous offrons une variété de services de transport.</p>
+                <a href="offres.html">Veuillez visiter notre page des offres ici</a>
+            </div>
+        </div>
+    </section>
+    <section class="carte" os-animation="fadeInUp">
+        <h2>Carte Interactive</h2>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15600.123456789012!2d15.123456789012345!3d12.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA3JzI0LjQiTiAxNcKwMDcnMjQuNCJF!5e0!3m2!1sfr!2std!4v1631234567890!5m2!1sfr!2std" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-locations">
+                <div class="location" os-animation="fadeInUp">
+                    <h3>N'djamena</h3>
+                    <p>Terminal de Bus Agence De Voyage <br><strong>Abou Aziza</strong></p>
+                    <p>Plot 30-32, Karkandjie, N'djamena ,Tchad</p>
+                    <p><strong>TEL :</strong> +250793225853 | +250793225853</p>
+                </div>
+                <div class="location" os-animation="fadeInUp">
+                    <h3>Abéché</h3>
+                    <p>Terminal de Bus Agence De Voyage <br><strong>Abou Aziza</strong></p>
+                    <p>Plot 30-32, Amririé, Abéché, Tchad</p>
+                    <p><strong>TEL :</strong> +250793225853 | +250793225853</p>
+                </div>
+            </div>
+
+            <div class="footer-social" os-animation="fadeInUp">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom" os-animation="fadeInUp">
+            <p>&copy; 2025 Agence De Voyage Abou Aziza. Tous droits réservés.</p>
+        </div>
+    </footer>
+	<script src="apropos.js"></script>
+</body>
+</html>
+
+
